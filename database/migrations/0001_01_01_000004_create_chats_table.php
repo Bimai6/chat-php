@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('owner_id')->constrained('users');
             $table->string('name');
             $table->enum('type', ['public', 'private'])->default('public');
+            $table->enum('topic', ['News', 'Climate','Movies', 'Culture', 'Music', 'Books', 'Art', 'Education', 'Religion', 'Psychology', 'Sports', 'Travel', 'Food', 'Home', 'DIY', 'Work', 'Games', 'Health', 'Gardening', 'Fashion' ])->nullable();
             $table->text('description');
             $table->timestamp('creation_date')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
