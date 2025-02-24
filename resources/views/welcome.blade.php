@@ -20,8 +20,8 @@
             </style>
         @endif
     </head>
-    <body class="font-sans antialiased dark:bg-black dark:text-white/50">
-        <div class="bg-blue-8 text-black/50 dark:bg-blue-10 dark:text-white/50">
+    <body class="font-sans antialiased">
+        <div class="bg-blue-8 text-black/50">
             <div class="relative min-h-screen flex flex-col items-center justify-around selection:bg-blue-2 selection:text-white">
                 <div class="relative w-full min-h-screen">
                     <header class="grid grid-cols-2 items-center justify-between gap-2 py-5">
@@ -81,7 +81,7 @@
                         </div>
                     </main>
 
-                    <footer class="flex py-5 text-center text-sm text-white dark:text-white/70 justify-between items-center mt-6 mr-10 ml-10 margin-0 top-0 left-0">
+                    <footer class="flex py-5 text-center text-sm text-white justify-between items-center mt-6 mr-10 ml-10 margin-0 top-0 left-0">
                         <span>&copy; BreezeFlow</span>
                         <img class="w-8 h-8" src="/github.png" alt="Github logo">
 

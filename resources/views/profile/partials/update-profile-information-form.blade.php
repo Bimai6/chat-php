@@ -1,10 +1,10 @@
 <section>
     <header>
-        <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
+        <h2 class="text-lg font-medium text-gray-900">
             {{ __('Update Profile') }}
         </h2>
 
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+        <p class="mt-1 text-sm text-gray-600">
             {{ __('Update your account\'s profile information and email address.') }}
         </p>
     </header>
@@ -51,13 +51,13 @@
             <x-primary-button>{{ __('Save') }}</x-primary-button>
 
             @if (session('status') === 'both-changed')
-                <p class="text-sm text-green-600 dark:text-green-400">{{ __('Both name and email have been updated.') }}</p>
+                <p class="text-sm text-green-600">{{ __('Both name and email have been updated.') }}</p>
             @elseif (session('status') === 'name-changed')
-                <p class="text-sm text-green-600 dark:text-green-400">{{ __('Name has been updated.') }}</p>
+                <p class="text-sm text-green-600">{{ __('Name has been updated.') }}</p>
             @elseif (session('status') === 'email-changed')
-                <p class="text-sm text-green-600 dark:text-green-400">{{ __('Email has been updated.') }}</p>
+                <p class="text-sm text-green-600">{{ __('Email has been updated.') }}</p>
             @elseif (session('status') === 'no-changes')
-                <p class="text-sm text-red-600 dark:text-red-400">{{ __('No changes were made.') }}</p>
+                <p class="text-sm text-red-600">{{ __('No changes were made.') }}</p>
             @endif
         </div>
     </form>
